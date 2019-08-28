@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitAny": false,
+    "pretty": true,
+    "sourceMap": true,
+    "strict": true,
+    "resolveJsonModule": true,
+    "lib": ["dom", "es2018", "esnext.asynciterable"],
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "esnext",
+    "typeRoots": ["./node_modules/@types"],
+    "outDir": "build",
+    "baseUrl": "."
+  },
+  "exclude": ["node_modules", "build", "*.spec.ts"],
+  "include": ["*.ts", "src/*.ts", "src/**/*.ts"]
+}

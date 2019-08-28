@@ -1,0 +1,53 @@
+{
+  "name": "@rk-loyalty/core",
+  "version": "1.0.0",
+  "description": "Loyalty Core",
+  "private": true,
+  "main": "build/index.js",
+  "module": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "clean": "rimraf build",
+    "compile": "tsc",
+    "build": "yarn clean && yarn compile",
+    "prepublish": "yarn build",
+    "dev": "npx nodemon --exec ts-node -- src/index.ts",
+    "test": "npx ts-mocha 'src/**/*.spec.ts'"
+  },
+  "devDependencies": {
+    "@types/body-parser": "1.17.0",
+    "@types/chai": "4.1.7",
+    "@types/compression": "0.0.36",
+    "@types/cors": "2.8.4",
+    "@types/expect": "1.20.4",
+    "@types/express": "4.16.0",
+    "@types/helmet": "0.0.42",
+    "@types/mocha": "5.2.6",
+    "@types/mongoose": "5.3.21",
+    "@types/node": "11.10.4",
+    "nodemon": "1.18.10",
+    "rimraf": "2.6.3",
+    "ts-mocha": "6.0.0",
+    "ts-node": "8.0.3",
+    "tslint": "5.13.1",
+    "tslint-config-prettier": "1.18.0",
+    "typescript": "3.3.3"
+  },
+  "dependencies": {
+    "axios": "0.18.0",
+    "body-parser": "1.18.3",
+    "chai": "4.2.0",
+    "compression": "1.7.3",
+    "cors": "2.8.4",
+    "express": "4.16.3",
+    "helmet": "3.13.0",
+    "mocha": "6.0.2",
+    "mongodb": "3.1.13",
+    "mongoose": "5.4.17",
+    "reflect-metadata": "0.1.13",
+    "typeorm": "0.2.15"
+  },
+  "prettier": {
+    "trailingComma": "all"
+  }
+}

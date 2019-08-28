@@ -1,0 +1,31 @@
+{
+  "name": "@rk-loyalty/service-configuration",
+  "version": "1.0.0",
+  "description": "Loyalty POC based on containers",
+  "private": true,
+  "scripts": {
+    "start": "node index.js",
+    "clean": "rimraf build",
+    "compile": "tsc",
+    "build": "yarn clean && yarn compile",
+    "dev": "npx nodemon --exec ts-node -- ./index.ts"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.0",
+    "@types/mongoose": "^5.3.21",
+    "@types/node": "11.10.4",
+    "nodemon": "1.18.10",
+    "rimraf": "^2.6.3",
+    "ts-node": "^8.0.3",
+    "tslint": "5.13.1",
+    "tslint-config-prettier": "1.18.0",
+    "typescript": "3.3.3"
+  },
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "mongoose": "^5.4.17"
+  },
+  "prettier": {
+    "trailingComma": "all"
+  }
+}
