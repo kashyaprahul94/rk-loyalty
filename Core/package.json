@@ -45,7 +45,7 @@
     "mongodb": "3.1.13",
     "mongoose": "5.4.17",
     "reflect-metadata": "0.1.13",
-    "typeorm": "0.2.15"
+    "typeorm": "0.2.25"
   },
   "prettier": {
     "trailingComma": "all"
