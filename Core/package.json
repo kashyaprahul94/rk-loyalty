@@ -39,7 +39,7 @@
     "chai": "4.2.0",
     "compression": "1.7.3",
     "cors": "2.8.4",
-    "express": "4.16.3",
+    "express": "4.17.3",
     "helmet": "3.13.0",
     "mocha": "6.0.2",
     "mongodb": "3.1.13",
